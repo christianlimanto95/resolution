@@ -7,13 +7,12 @@ require_once("application/core/General_controller.php");
 class Home extends General_controller {
 	public function __construct() {
 		parent::__construct();
-		$this->load->model("Home_model");
 	}
 	
 	public function index()
 	{
 		$data = array(
-			"title" => "Home"
+			"title" => "2018 Resolution"
 		);
 		
 		parent::view("home", $data);

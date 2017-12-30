@@ -13,7 +13,6 @@ class General_controller extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('common/General_model');
     }
 
 	public function load_module($module_name) {
@@ -36,11 +35,5 @@ class General_controller extends CI_Controller
         $this->load->view('common/header', $data);
         $this->load->view($file, $data);
         $this->load->view('common/footer');
-    }
-
-	public function cek_login() {
-        if ($this->session->userdata('isLoggedIn') != 1) {
-            redirect(base_url());
-        }
     }
 }

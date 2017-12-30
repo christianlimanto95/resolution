@@ -1,5 +1,5 @@
 * {
-  font-family: copperplate-bold;
+  font-family: century-gothic;
   outline: 0;
   margin: 0;
   padding: 0;
@@ -27,18 +27,15 @@ body {
 
 .section {
   width: 100vw;
-  background-color: #F1F1F1;
+  height: 100vh;
+  background-color: #790000;
   overflow: hidden;
-  color: #444;
+  color: white;
 }
 
 @media all and (max-width: 1279px) {
   .div-mobile {
     display: block;
-  }
-
-  .section {
-    height: 160vw;
   }
 }
 
@@ -49,9 +46,5 @@ body {
 @media all and (min-width: 1280px) {
   .div-mobile {
     display: none;
-  }
-
-  .section {
-    height: 100vh;
   }
 }

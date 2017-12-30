@@ -7,7 +7,7 @@
     <div class="share-container">
         <div class="share-image" data-clipboard-text="<?php echo "Here's my 2018 resolution. Create yours too!" . "\r\n\r\n" .  $url; ?>" style="background-image: url(<?php echo base_url("assets/images/share.png"); ?>);"></div>
         <div class="line-it-button" data-lang="en" data-type="share-d" data-url="<?php echo "Here's my 2018 resolution. Create yours too!" . "\r\n\r\n" .  $url; ?>" style="display: none;" ></div>
-        <a href="https://api.whatsapp.com/send?text=<?php echo urlencode("Here's my 2018 resolution. Create yours too!" . "\r\n\r\n" .  $url); ?>" class="share-whatsapp" style="background-image: url(<?php echo base_url("assets/images/whatsapp.png"); ?>);" ></a>
+        <a href="https://api.whatsapp.com/send?text=<?php echo rawurlencode("Here's my 2018 resolution. Create yours too!" . "\r\n\r\n" .  $url); ?>" class="share-whatsapp" style="background-image: url(<?php echo base_url("assets/images/whatsapp.png"); ?>);" ></a>
     </div>
 </div>
 <div class="notif">Link copied</div>

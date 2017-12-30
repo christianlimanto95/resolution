@@ -1,3 +1,31 @@
+@-webkit-keyframes logo-anim {
+	to {
+		-webkit-transform: translate(-50%, -35vh);
+	}
+}
+
+@keyframes logo-anim {
+	to {
+		-moz-transform: translate(-50%, -35vh);
+		-ms-transform: translate(-50%, -35vh);
+		-o-transform: translate(-50%, -35vh);
+		transform: translate(-50%, -35vh);
+	}
+}
+
+.logo, .tree-image, .steps, .arrow-image, .type-your-resolution {
+	-webkit-animation-duration: 1s;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-duration: 1s;
+	-moz-animation-fill-mode: forwards;
+	-ms-animation-duration: 1s;
+	-ms-animation-fill-mode: forwards;
+	-o-animation-duration: 1s;
+	-o-animation-fill-mode: forwards;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
 .logo {
 	display: inline-block;
 	position: absolute;
@@ -9,6 +37,61 @@
 	-ms-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
+
+	-webkit-animation-name: logo-anim;
+	-webkit-animation-delay: 1.5s;
+	-moz-animation-name: logo-anim;
+	-moz-animation-delay: 1.5s;
+	-ms-animation-name: logo-anim;
+	-ms-animation-delay: 1.5s;
+	-o-animation-name: logo-anim;
+	-o-animation-delay: 1.5s;
+	animation-name: logo-anim;
+	animation-delay: 1.5s;
+}
+
+@-webkit-keyframes logo-transitioning {
+	to {
+		-webkit-transform: translate(-50%, -40vh) scale(0.7, 0.7);
+	}
+}
+
+@keyframes logo-transitioning {
+	to {
+		-moz-transform: translate(-50%, -40vh) scale(0.7, 0.7);
+		-ms-transform: translate(-50%, -40vh) scale(0.7, 0.7);
+		-o-transform: translate(-50%, -40vh) scale(0.7, 0.7);
+		transform: translate(-50%, -40vh) scale(0.7, 0.7);
+	}
+}
+
+.section.transitioning .logo {
+	-webkit-transform: translate(-50%, -35vh);
+	-moz-transform: translate(-50%, -35vh);
+	-ms-transform: translate(-50%, -35vh);
+	-o-transform: translate(-50%, -35vh);
+	transform: translate(-50%, -35vh);
+
+	-webkit-animation-name: logo-transitioning;
+	-webkit-animation-delay: 0s;
+	-moz-animation-name: logo-transitioning;
+	-moz-animation-delay: 0s;
+	-ms-animation-name: logo-transitioning;
+	-ms-animation-delay: 0s;
+	-o-animation-name: logo-transitioning;
+	-o-animation-delay: 0s;
+	animation-name: logo-transitioning;
+	animation-delay: 0s;
+}
+
+.section.transitioning-half-done .logo, .section.transitioning-done .logo {
+	-webkit-transform: translate(-50%, -40vh) scale(0.7, 0.7);
+	-moz-transform: translate(-50%, -40vh) scale(0.7, 0.7);
+	-ms-transform: translate(-50%, -40vh) scale(0.7, 0.7);
+	-o-transform: translate(-50%, -40vh) scale(0.7, 0.7);
+	transform: translate(-50%, -40vh) scale(0.7, 0.7);
+
+	animation: none;
 }
 
 .resolution-image {
@@ -22,8 +105,20 @@
 	letter-spacing: 15px;
 	margin-top: 10px;
 	font-size: 12pt;
-	font-family: pier-sans;
+	font-family: arial;
 	text-align: center;
+}
+
+@-webkit-keyframes tree-anim {
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes tree-anim {
+	to {
+		opacity: 0;
+	}
 }
 
 .tree-image {
@@ -32,4 +127,251 @@
 	background-size: 100%;
 	background-repeat: no-repeat;
 	margin: 20px auto 0;
+
+	-webkit-animation-name: tree-anim;
+	-webkit-animation-delay: 0.5s;
+	-moz-animation-name: tree-anim;
+	-moz-animation-delay: 0.5s;
+	-ms-animation-name: tree-anim;
+	-ms-animation-delay: 0.5s;
+	-o-animation-name: tree-anim;
+	-o-animation-delay: 0.5s;
+	animation-name: tree-anim;
+	animation-delay: 0.5s;
+}
+
+@-webkit-keyframes steps-anim {
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes steps-anim {
+	to {
+		opacity: 1;
+	}
+}
+
+.steps {
+	opacity: 0;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	text-align: center;
+
+	-webkit-animation-name: steps-anim;
+	-webkit-animation-delay: 2.5s;
+	-moz-animation-name: steps-anim;
+	-moz-animation-delay: 2.5s;
+	-ms-animation-name: steps-anim;
+	-ms-animation-delay: 2.5s;
+	-o-animation-name: steps-anim;
+	-o-animation-delay: 2.5s;
+	animation-name: steps-anim;
+	animation-delay: 2.5s;
+}
+
+.section.transitioning .steps {
+	opacity: 1;
+
+	-webkit-animation-name: tree-anim;
+	-webkit-animation-delay: 0s;
+	-moz-animation-name: tree-anim;
+	-moz-animation-delay: 0s;
+	-ms-animation-name: tree-anim;
+	-ms-animation-delay: 0s;
+	-o-animation-name: tree-anim;
+	-o-animation-delay: 0s;
+	animation-name: tree-anim;
+	animation-delay: 0s;
+}
+
+.section.transitioning-half-done .steps, .section.transitioning-done .steps {
+	opacity: 0;
+	animation: none;
+}
+
+.step {
+	display: inline-block;
+	width: 330px;
+}
+
+.step-title {
+	font-family: arial;
+	font-size: 14pt;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+}
+
+.step-description {
+	font-size: 18pt;
+	font-family: pier-sans;
+	width: 200px;
+	margin: 0 auto;
+}
+
+.type-your-resolution {
+	opacity: 0;
+	width: 600px;
+	height: 250px;
+	font-size: 32pt;
+	resize: none;
+	color: white;
+	background-color: transparent;
+	text-align: center;
+	font-family: pier-sans;
+	overflow: hidden;
+	border: 0;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: white;
+}
+::-moz-placeholder { /* Firefox 19+ */
+color: white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+color: white;
+}
+
+.section.transitioning-half-done .type-your-resolution {
+	-webkit-animation-name: steps-anim;
+	-moz-animation-name: steps-anim;
+	-ms-animation-name: steps-anim;
+	-o-animation-name: steps-anim;
+	animation-name: steps-anim;
+}
+
+.section.transitioning-done .type-your-resolution {
+	opacity: 1;
+}
+
+.arrow-image {
+	opacity: 0;
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+
+	width: 50px;
+	height: 50px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	bottom: 100px;
+	cursor: pointer;
+	margin: 0 auto;
+
+	-webkit-animation-name: steps-anim;
+	-webkit-animation-delay: 3s;
+	-moz-animation-name: steps-anim;
+	-moz-animation-delay: 3s;
+	-ms-animation-name: steps-anim;
+	-ms-animation-delay: 3s;
+	-o-animation-name: steps-anim;
+	-o-animation-delay: 3s;
+	animation-name: steps-anim;
+	animation-delay: 3s;
+}
+
+@media all and (max-width: 1024px) {
+	@-webkit-keyframes logo-anim {
+		to {
+			-webkit-transform: translate(-50%, -45vh);
+		}
+	}
+	
+	@keyframes logo-anim {
+		to {
+			-moz-transform: translate(-50%, -45vh);
+			-ms-transform: translate(-50%, -45vh);
+			-o-transform: translate(-50%, -45vh);
+			transform: translate(-50%, -45vh);
+		}
+	}
+
+	.section.transitioning .logo {
+		-webkit-transform: translate(-50%, -45vh);
+		-moz-transform: translate(-50%, -45vh);
+		-ms-transform: translate(-50%, -45vh);
+		-o-transform: translate(-50%, -45vh);
+		transform: translate(-50%, -45vh);
+	}
+
+	@-webkit-keyframes logo-transitioning {
+		to {
+			-webkit-transform: translate(-50%, -45vh) scale(0.7, 0.7);
+		}
+	}
+	
+	@keyframes logo-transitioning {
+		to {
+			-moz-transform: translate(-50%, -45vh) scale(0.7, 0.7);
+			-ms-transform: translate(-50%, -45vh) scale(0.7, 0.7);
+			-o-transform: translate(-50%, -45vh) scale(0.7, 0.7);
+			transform: translate(-50%, -45vh) scale(0.7, 0.7);
+		}
+	}
+
+	.section.transitioning-half-done .logo, .section.transitioning-done .logo {
+		-webkit-transform: translate(-50%, -45vh) scale(0.7, 0.7);
+		-moz-transform: translate(-50%, -45vh) scale(0.7, 0.7);
+		-ms-transform: translate(-50%, -45vh) scale(0.7, 0.7);
+		-o-transform: translate(-50%, -45vh) scale(0.7, 0.7);
+		transform: translate(-50%, -45vh) scale(0.7, 0.7);
+	
+		animation: none;
+	}
+
+	.step {
+		display: block;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	
+	.step-title {
+		font-size: 5vw;
+		margin-bottom: 1vw;
+	}
+	
+	.step-description {
+		font-size: 6vw;
+		font-family: pier-sans;
+		width: 90vw;
+		margin: 0 auto;
+	}
+
+	.type-your-resolution {
+		width: 90vw;
+		height: 50vw;
+		font-size: 7vw;
+	}
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media all and (min-width: 1025px) {
+
 }

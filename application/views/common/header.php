@@ -1,5 +1,6 @@
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<title><?php echo $title; ?></title>
 	
 	<link rel="stylesheet" href="<?php echo base_url("assets/css/common/default.css"); ?>" />
@@ -22,4 +23,15 @@
 	</style>
 </head>
 <body>
+<script>
+var isMobile = false, isTablet = false;
+var vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+var vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+if (vw < 1025) {
+	isMobile = true;
+	if (vw >= 768) {
+		isTablet = true;
+	}
+}
+</script>
 <div class="container">

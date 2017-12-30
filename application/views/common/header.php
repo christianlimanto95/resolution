@@ -1,5 +1,21 @@
 <html>
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script>
+	if(navigator.userAgent.indexOf("Speed Insights") == -1) {
+		var script = document.createElement("script");
+		script.src="https://www.googletagmanager.com/gtag/js?id=UA-110331342-2";
+		script.setAttribute("async", "");
+		document.head.appendChild(script);
+		
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-110331342-2');
+	}
+	</script>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<title><?php echo $title; ?></title>
 	<meta name="description" content="Create & share your 2018 resolution" />

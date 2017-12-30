@@ -541,8 +541,7 @@ input[type="radio"] {
     }
     
     .arrow-image, .font-image, .color-image {
-        bottom: 0;
-        top: 140vw;
+        bottom: 10vw;
     }
 
 	.modal {
@@ -612,8 +611,7 @@ input[type="radio"] {
     }
     
     .arrow-image, .font-image, .color-image {
-        bottom: 0;
-        top: 115vw;
+        bottom: 100px;
     }
 }
 

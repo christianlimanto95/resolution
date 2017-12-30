@@ -1,0 +1,50 @@
+* {
+  font-family: century-gothic;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+
+  -ms-touch-action: pan-x pan-y;
+  touch-action: manipulation;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+  background-color: #790000;
+  overflow: hidden;
+  color: white;
+}
+
+@media all and (max-width: 1279px) {
+  .div-mobile {
+    display: block;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1279px) {
+
+}
+
+@media all and (min-width: 1280px) {
+  .div-mobile {
+    display: none;
+  }
+}

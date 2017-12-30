@@ -467,48 +467,48 @@ input[type="radio"] {
 @media all and (max-width: 1024px) {
 	@-webkit-keyframes logo-anim {
 		to {
-			-webkit-transform: translate(-50%, -45vh);
+			-webkit-transform: translate(-50%, -80vw);
 		}
 	}
 	
 	@keyframes logo-anim {
 		to {
-			-moz-transform: translate(-50%, -45vh);
-			-ms-transform: translate(-50%, -45vh);
-			-o-transform: translate(-50%, -45vh);
-			transform: translate(-50%, -45vh);
+			-moz-transform: translate(-50%, -80vw);
+			-ms-transform: translate(-50%, -80vw);
+			-o-transform: translate(-50%, -80vw);
+			transform: translate(-50%, -80vw);
 		}
 	}
 
 	.section.transitioning .logo {
-		-webkit-transform: translate(-50%, -45vh);
-		-moz-transform: translate(-50%, -45vh);
-		-ms-transform: translate(-50%, -45vh);
-		-o-transform: translate(-50%, -45vh);
-		transform: translate(-50%, -45vh);
+		-webkit-transform: translate(-50%, -80vw);
+		-moz-transform: translate(-50%, -80vw);
+		-ms-transform: translate(-50%, -80vw);
+		-o-transform: translate(-50%, -80vw);
+		transform: translate(-50%, -80vw);
 	}
 
 	@-webkit-keyframes logo-transitioning {
 		to {
-			-webkit-transform: translate(-50%, -45vh) scale(0.7, 0.7);
+			-webkit-transform: translate(-50%, -85vw) scale(0.7, 0.7);
 		}
 	}
 	
 	@keyframes logo-transitioning {
 		to {
-			-moz-transform: translate(-50%, -45vh) scale(0.7, 0.7);
-			-ms-transform: translate(-50%, -45vh) scale(0.7, 0.7);
-			-o-transform: translate(-50%, -45vh) scale(0.7, 0.7);
-			transform: translate(-50%, -45vh) scale(0.7, 0.7);
+			-moz-transform: translate(-50%, -85vw) scale(0.7, 0.7);
+			-ms-transform: translate(-50%, -85vw) scale(0.7, 0.7);
+			-o-transform: translate(-50%, -85vw) scale(0.7, 0.7);
+			transform: translate(-50%, -85vw) scale(0.7, 0.7);
 		}
 	}
 
 	.section.transitioning-half-done .logo, .section.transitioning-done .logo {
-		-webkit-transform: translate(-50%, -45vh) scale(0.7, 0.7);
-		-moz-transform: translate(-50%, -45vh) scale(0.7, 0.7);
-		-ms-transform: translate(-50%, -45vh) scale(0.7, 0.7);
-		-o-transform: translate(-50%, -45vh) scale(0.7, 0.7);
-		transform: translate(-50%, -45vh) scale(0.7, 0.7);
+		-webkit-transform: translate(-50%, -85vw) scale(0.7, 0.7);
+		-moz-transform: translate(-50%, -85vw) scale(0.7, 0.7);
+		-ms-transform: translate(-50%, -85vw) scale(0.7, 0.7);
+		-o-transform: translate(-50%, -85vw) scale(0.7, 0.7);
+		transform: translate(-50%, -85vw) scale(0.7, 0.7);
 	
 		animation: none;
 	}
@@ -539,7 +539,65 @@ input[type="radio"] {
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
+	@-webkit-keyframes logo-anim {
+		to {
+			-webkit-transform: translate(-50%, -55vw);
+		}
+	}
+	
+	@keyframes logo-anim {
+		to {
+			-moz-transform: translate(-50%, -55vw);
+			-ms-transform: translate(-50%, -55vw);
+			-o-transform: translate(-50%, -55vw);
+			transform: translate(-50%, -55vw);
+		}
+	}
 
+	.section.transitioning .logo {
+		-webkit-transform: translate(-50%, -55vw);
+		-moz-transform: translate(-50%, -55vw);
+		-ms-transform: translate(-50%, -55vw);
+		-o-transform: translate(-50%, -55vw);
+		transform: translate(-50%, -55vw);
+	}
+
+	@-webkit-keyframes logo-transitioning {
+		to {
+			-webkit-transform: translate(-50%, -60vw) scale(0.7, 0.7);
+		}
+	}
+	
+	@keyframes logo-transitioning {
+		to {
+			-moz-transform: translate(-50%, -60vw) scale(0.7, 0.7);
+			-ms-transform: translate(-50%, -60vw) scale(0.7, 0.7);
+			-o-transform: translate(-50%, -60vw) scale(0.7, 0.7);
+			transform: translate(-50%, -60vw) scale(0.7, 0.7);
+		}
+	}
+
+	.section.transitioning-half-done .logo, .section.transitioning-done .logo {
+		-webkit-transform: translate(-50%, -60vw) scale(0.7, 0.7);
+		-moz-transform: translate(-50%, -60vw) scale(0.7, 0.7);
+		-ms-transform: translate(-50%, -60vw) scale(0.7, 0.7);
+		-o-transform: translate(-50%, -60vw) scale(0.7, 0.7);
+		transform: translate(-50%, -60vw) scale(0.7, 0.7);
+	
+		animation: none;
+	}
+
+	.step {
+		margin-bottom: 7vw;
+	}
+
+	.step-title {
+		font-size: 4vw;
+	}
+	
+	.step-description {
+		font-size: 5vw;
+	}
 }
 
 @media all and (min-width: 1025px) {

@@ -19,6 +19,12 @@
   user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
 
   -webkit-tap-highlight-color: transparent;
+
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar { 
+  width: 0 !important;
 }
 
 body {
@@ -27,24 +33,33 @@ body {
 
 .section {
   width: 100vw;
-  height: 100vh;
   background-color: #790000;
   overflow: hidden;
   color: white;
 }
 
-@media all and (max-width: 1279px) {
+@media all and (max-width: 1024px) {
   .div-mobile {
     display: block;
   }
+
+  .section {
+    height: 160vw;
+  }
 }
 
-@media all and (min-width: 768px) and (max-width: 1279px) {
-
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .section {
+    height: 130vw;
+  }
 }
 
-@media all and (min-width: 1280px) {
+@media all and (min-width: 1025px) {
   .div-mobile {
     display: none;
+  }
+
+  .section {
+    height: 56vw;
   }
 }

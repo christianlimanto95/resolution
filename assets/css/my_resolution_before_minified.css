@@ -46,7 +46,7 @@
 	transform: translateX(-50%);
 }
 
-.share-image {
+.share-image, .share-whatsapp {
     float: left;
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -114,6 +114,13 @@
 	animation-name: notif-anim;
 	animation-duration: 3s;
 	animation-fill-mode: forwards;
+}
+
+.share-whatsapp {
+    width: 45px;
+    height: 45px;
+    margin-left: 20px;
+    margin-top: 2px;
 }
 
 iframe {

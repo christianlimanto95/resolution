@@ -9,4 +9,5 @@
         <div class="share-image" data-clipboard-text="<?php echo $url; ?>" style="background-image: url(<?php echo base_url("assets/images/share.png"); ?>);"></div>
     </div>
 </div>
+<div class="notif">Link copied</div>
 <script src="<?php echo base_url("assets/js/clipboard.min.js"); ?>" defer></script>

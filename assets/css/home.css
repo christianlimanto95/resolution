@@ -294,6 +294,31 @@ color: white;
 	animation-delay: 3s;
 }
 
+.section.transitioning .arrow-image {
+	-webkit-animation-name: tree-anim;
+	-webkit-animation-delay: 0s;
+	-moz-animation-name: tree-anim;
+	-moz-animation-delay: 0s;
+	-ms-animation-name: tree-anim;
+	-ms-animation-delay: 0s;
+	-o-animation-name: tree-anim;
+	-o-animation-delay: 0s;
+	animation-name: tree-anim;
+	animation-delay: 0s;
+}
+
+.section.transitioning-half-done .arrow-image {
+	-webkit-animation-delay: 0s;
+	-moz-animation-delay: 0s;
+	-ms-animation-delay: 0s;
+	-o-animation-delay: 0s;
+	animation-delay: 0s;
+}
+
+.section.transitioning-done .arrow-image {
+	opacity: 1;
+}
+
 @media all and (max-width: 1024px) {
 	@-webkit-keyframes logo-anim {
 		to {

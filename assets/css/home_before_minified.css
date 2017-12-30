@@ -209,6 +209,7 @@
 }
 
 .type-your-resolution {
+	display: none;
 	opacity: 0;
 	width: 600px;
 	height: 250px;
@@ -245,6 +246,7 @@ color: white;
 }
 
 .section.transitioning-half-done .type-your-resolution {
+	display: block;
 	-webkit-animation-name: steps-anim;
 	-moz-animation-name: steps-anim;
 	-ms-animation-name: steps-anim;
@@ -253,6 +255,7 @@ color: white;
 }
 
 .section.transitioning-done .type-your-resolution {
+	display: block;
 	opacity: 1;
 }
 
@@ -467,48 +470,48 @@ input[type="radio"] {
 @media all and (max-width: 1024px) {
 	@-webkit-keyframes logo-anim {
 		to {
-			-webkit-transform: translate(-50%, -80vw);
+			-webkit-transform: translate(-50%, -70vw);
 		}
 	}
 	
 	@keyframes logo-anim {
 		to {
-			-moz-transform: translate(-50%, -80vw);
-			-ms-transform: translate(-50%, -80vw);
-			-o-transform: translate(-50%, -80vw);
-			transform: translate(-50%, -80vw);
+			-moz-transform: translate(-50%, -70vw);
+			-ms-transform: translate(-50%, -70vw);
+			-o-transform: translate(-50%, -70vw);
+			transform: translate(-50%, -70vw);
 		}
 	}
 
 	.section.transitioning .logo {
-		-webkit-transform: translate(-50%, -80vw);
-		-moz-transform: translate(-50%, -80vw);
-		-ms-transform: translate(-50%, -80vw);
-		-o-transform: translate(-50%, -80vw);
-		transform: translate(-50%, -80vw);
+		-webkit-transform: translate(-50%, -70vw);
+		-moz-transform: translate(-50%, -70vw);
+		-ms-transform: translate(-50%, -70vw);
+		-o-transform: translate(-50%, -70vw);
+		transform: translate(-50%, -70vw);
 	}
 
 	@-webkit-keyframes logo-transitioning {
 		to {
-			-webkit-transform: translate(-50%, -85vw) scale(0.7, 0.7);
+			-webkit-transform: translate(-50%, -80vw) scale(0.7, 0.7);
 		}
 	}
 	
 	@keyframes logo-transitioning {
 		to {
-			-moz-transform: translate(-50%, -85vw) scale(0.7, 0.7);
-			-ms-transform: translate(-50%, -85vw) scale(0.7, 0.7);
-			-o-transform: translate(-50%, -85vw) scale(0.7, 0.7);
-			transform: translate(-50%, -85vw) scale(0.7, 0.7);
+			-moz-transform: translate(-50%, -80vw) scale(0.7, 0.7);
+			-ms-transform: translate(-50%, -80vw) scale(0.7, 0.7);
+			-o-transform: translate(-50%, -80vw) scale(0.7, 0.7);
+			transform: translate(-50%, -80vw) scale(0.7, 0.7);
 		}
 	}
 
 	.section.transitioning-half-done .logo, .section.transitioning-done .logo {
-		-webkit-transform: translate(-50%, -85vw) scale(0.7, 0.7);
-		-moz-transform: translate(-50%, -85vw) scale(0.7, 0.7);
-		-ms-transform: translate(-50%, -85vw) scale(0.7, 0.7);
-		-o-transform: translate(-50%, -85vw) scale(0.7, 0.7);
-		transform: translate(-50%, -85vw) scale(0.7, 0.7);
+		-webkit-transform: translate(-50%, -80vw) scale(0.7, 0.7);
+		-moz-transform: translate(-50%, -80vw) scale(0.7, 0.7);
+		-ms-transform: translate(-50%, -80vw) scale(0.7, 0.7);
+		-o-transform: translate(-50%, -80vw) scale(0.7, 0.7);
+		transform: translate(-50%, -80vw) scale(0.7, 0.7);
 	
 		animation: none;
 	}
@@ -535,6 +538,10 @@ input[type="radio"] {
 		width: 90vw;
 		height: 50vw;
 		font-size: 7vw;
+	}
+
+	.modal {
+		bottom: 10px;
 	}
 }
 

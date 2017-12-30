@@ -117,11 +117,11 @@
 
 @media all and (max-width: 1024px) {
 	.logo {
-		-webkit-transform: translate(-50%, -85vw) scale(0.7, 0.7);
-		-moz-transform: translate(-50%, -85vw) scale(0.7, 0.7);
-		-ms-transform: translate(-50%, -85vw) scale(0.7, 0.7);
-		-o-transform: translate(-50%, -85vw) scale(0.7, 0.7);
-		transform: translate(-50%, -85vw) scale(0.7, 0.7);
+		-webkit-transform: translate(-50%, -80vw) scale(0.7, 0.7);
+		-moz-transform: translate(-50%, -80vw) scale(0.7, 0.7);
+		-ms-transform: translate(-50%, -80vw) scale(0.7, 0.7);
+		-o-transform: translate(-50%, -80vw) scale(0.7, 0.7);
+		transform: translate(-50%, -80vw) scale(0.7, 0.7);
 	}
 
 	.type-your-resolution {

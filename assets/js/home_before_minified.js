@@ -20,13 +20,17 @@ $(function() {
 			$(".font-image").on("click", function() {
 				$(".button").addClass("hide");
 				$(".font-modal").addClass("show");
-				$(".type-your-resolution").focus();
+				if(document.activeElement) {
+					document.activeElement.blur();
+				} 
 			});
 
 			$(".color-image").on("click", function() {
 				$(".button").addClass("hide");
 				$(".background-modal").addClass("show");
-				$(".type-your-resolution").focus();
+				if(document.activeElement) {
+					document.activeElement.blur();
+				} 
 			});
 		});
 	});
@@ -35,27 +39,23 @@ $(function() {
 		var color = $(this).data("value");
 		$(".type-your-resolution").css("color", color);
 		$("input[name='resolution_text_color']").val(color);
-		$(".type-your-resolution").focus();
 	});
 
 	$(".background-color-picker label").on("click", function() {
 		var color = $(this).data("value");
 		$(".section").css("background-color", color);
 		$("input[name='resolution_background_color']").val(color);
-		$(".type-your-resolution").focus();
 	});
 
 	$(".font").on("click", function() {
 		var value = $(this).data("value");
 		$(".type-your-resolution").css("font-family", "'" + value + "'");
 		$("input[name='resolution_text_font_family']").val(value);
-		$(".type-your-resolution").focus();
 	});
 
 	$(".btn-done").on("click", function() {
 		$(".modal").removeClass("show");
 		$(".button").removeClass("hide");
-		$(".type-your-resolution").focus();
 	});
 
 	$(".type-your-resolution").on("keydown", function(e) {

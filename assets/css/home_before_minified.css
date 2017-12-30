@@ -538,7 +538,12 @@ input[type="radio"] {
 		width: 90vw;
 		height: 50vw;
 		font-size: 7vw;
-	}
+    }
+    
+    .arrow-image, .font-image, .color-image {
+        bottom: 0;
+        top: 140vw;
+    }
 
 	.modal {
 		bottom: 10px;
@@ -604,7 +609,12 @@ input[type="radio"] {
 	
 	.step-description {
 		font-size: 5vw;
-	}
+    }
+    
+    .arrow-image, .font-image, .color-image {
+        bottom: 0;
+        top: 115vw;
+    }
 }
 
 @media all and (min-width: 1025px) {

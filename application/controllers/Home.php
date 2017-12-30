@@ -13,7 +13,7 @@ class Home extends General_controller {
 	public function index()
 	{
 		$data = array(
-			"title" => "2018 Resolution"
+			"title" => "Create 2018 Resolution"
 		);
 		
 		parent::view("home", $data);
@@ -40,7 +40,7 @@ class Home extends General_controller {
 		$item = $this->Home_model->get_resolution($item_id);
 		if (sizeof($item) > 0) {
 			$data = array(
-				"title" => "2018 Resolution",
+				"title" => "My 2018 Resolution",
 				"item" => $item[0],
 				"url" => base_url("my_resolution/" . $item_id)
 			);

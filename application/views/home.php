@@ -14,7 +14,7 @@
         </div>
         <div class="step step-3">
             <div class="step-title">STEP 3</div>
-            <div class="step-description">Share!</div>
+            <div class="step-description">Download and share!</div>
         </div>
     </div>
     <form class="form-submit" method="post" action="<?php echo base_url("home/submit_resolution"); ?>">

@@ -63,7 +63,7 @@ $(function() {
 			e.preventDefault();
 		} else if (nonPrintableChars.indexOf(e.keyCode) == -1) {
 			var text = $(this).val();   
-			if (text.length >= 100) {
+			if (text.length >= 50) {
 				e.preventDefault();
 			}
         }

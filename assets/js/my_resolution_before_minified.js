@@ -20,9 +20,9 @@ $(function() {
     context.textAlign = "center";
     var font = $(".type-your-resolution").css("font-family");
     document.fonts.ready.then(function() {
-        context.font = "70px '" + font + "'";
+        context.font = "100px '" + font + "'";
         context.fillStyle = $(".type-your-resolution").css("color");
-        wrapText(txt, 540, 600, 900, 95);
+        wrapText(txt, 540, 600, 950, 115);
 
         context.font = "25px century-gothic";
         context.fillStyle = "#FFFFFF";
@@ -34,8 +34,8 @@ $(function() {
     });
 
     $(".download-image").on("click", function() {
-        this.href = canvas.toDataURL();
-        this.download = "MyResolution.png";
+        this.href = canvas.toDataURL("image/jpeg", 1);
+        this.download = "MyResolution.jpg";
     });
 
     $(".type-your-resolution").html("").css("display", "block");
@@ -45,20 +45,33 @@ $(function() {
 function wrapText(text, x, y, maxWidth, lineHeight) {
     var words = text.split(' ');
     var line = '';
+    var lineCount = 1;
+
+    for (var n = 0; n < words.length; n++) {
+        var testLine = line + words[n] + ' ';
+        var metrics = context.measureText(testLine);
+        var testWidth = metrics.width;
+        if (testWidth > maxWidth && n > 0) {
+            lineCount++;
+        }
+    }
+
+    y = (1920 - (lineCount + 2) * lineHeight) / 2;
 
     for(var n = 0; n < words.length; n++) {
-      var testLine = line + words[n] + ' ';
-      var metrics = context.measureText(testLine);
-      var testWidth = metrics.width;
-      if (testWidth > maxWidth && n > 0) {
-        context.fillText(line, x, y);
-        line = words[n] + ' ';
-        y += lineHeight;
-      }
-      else {
-        line = testLine;
-      }
+        var testLine = line + words[n] + ' ';
+        var metrics = context.measureText(testLine);
+        var testWidth = metrics.width;
+        if (testWidth > maxWidth && n > 0) {
+            context.fillText(line, x, y);
+            line = words[n] + ' ';
+            y += lineHeight;
+        }
+        else {
+            line = testLine;
+        }
     }
+
     context.fillText(line, x, y);
 }
 

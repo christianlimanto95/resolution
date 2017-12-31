@@ -44,15 +44,20 @@
 	-ms-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
 	transform: translateX(-50%);
+	width: 250px;
 }
 
-.share-image, .share-whatsapp {
+.download-image, .share-image, .share-whatsapp {
     float: left;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	cursor: pointer;
 	width: 50px;
 	height: 50px;
+}
+
+.share-image {
+    margin-left: 20px;
 }
 
 .create-my-resolution {
@@ -126,6 +131,10 @@
 iframe {
     margin-left: 20px;
     margin-top: 4px;
+}
+
+.canvas {
+    display: none;
 }
 
 @media all and (max-width: 1024px) {

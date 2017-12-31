@@ -20,7 +20,7 @@
 	<title><?php echo $title; ?></title>
 	<meta name="description" content="Create & share your 2018 resolution" />
 	<link rel="stylesheet" href="<?php echo base_url("assets/css/common/default.css?v=2"); ?>" />
-	<link rel="stylesheet" href="<?php echo base_url("assets/css/" . $page_name . ".css?v=2"); ?>" />	
+	<link rel="stylesheet" href="<?php echo base_url("assets/css/" . $page_name . ".css?v=3"); ?>" />	
 	<style>
 		@font-face {
 			font-family: moon-regular;

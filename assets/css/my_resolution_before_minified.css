@@ -158,12 +158,12 @@ iframe {
 	}
 
 	.share-container {
-		bottom: 50vw;
+		bottom: 40vw;
 	}
 
 	.create-my-resolution {
 		width: 80vw;
-		bottom: 32vw;
+		bottom: 22vw;
 		font-size: 5vw;
 	}
 }
@@ -186,7 +186,7 @@ iframe {
 	}
 
 	.share-container {
-		bottom: 30vw;
+		bottom: 25vw;
 	}
 
 	.create-my-resolution {

@@ -9,24 +9,24 @@ $(function() {
     canvas = $(".canvas")[0];
     context = canvas.getContext("2d");
     context.fillStyle = $(".section").css("background-color");
-    context.fillRect(0, 0, 500, 500);
+    context.fillRect(0, 0, 1080, 1920);
 
     var image = new Image();
     image.onload = function() {
-        context.drawImage(image, 150, 20, 200, 67);
+        context.drawImage(image, 240, 100, 600, 203);
     };
     image.src = resolution_image_url;
 
     context.textAlign = "center";
     var font = $(".type-your-resolution").css("font-family");
     document.fonts.ready.then(function() {
-        context.font = "30px '" + font + "'";
+        context.font = "70px '" + font + "'";
         context.fillStyle = $(".type-your-resolution").css("color");
-        wrapText(txt, 250, 200, 400, 40);
+        wrapText(txt, 540, 600, 900, 95);
 
-        context.font = "10px century-gothic";
+        context.font = "25px century-gothic";
         context.fillStyle = "#FFFFFF";
-        context.fillText("resolution.dnp-project.com", 250, 480);
+        context.fillText("resolution.dnp-project.com", 540, 1850);
     });
 
     $(".share-image").on("click", function() {

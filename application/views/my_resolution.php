@@ -11,7 +11,7 @@
         <a href="https://api.whatsapp.com/send?text=<?php echo rawurlencode("Here's my 2018 resolution. Create yours too!" . "\r\n\r\n" .  $url); ?>" class="share-whatsapp" style="background-image: url(<?php echo base_url("assets/images/whatsapp.png"); ?>);" ></a>
     </div>
 </div>
-<canvas class="canvas" width="500" height="500" ></canvas>
+<canvas class="canvas" width="1080" height="1920" ></canvas>
 <div class="notif">Link copied</div>
 <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
 <script src="<?php echo base_url("assets/js/clipboard.min.js"); ?>" defer></script>

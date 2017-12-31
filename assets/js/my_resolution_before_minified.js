@@ -20,9 +20,9 @@ $(function() {
     context.textAlign = "center";
     var font = $(".type-your-resolution").css("font-family");
     document.fonts.ready.then(function() {
-        context.font = "100px '" + font + "'";
+        context.font = "110px '" + font + "'";
         context.fillStyle = $(".type-your-resolution").css("color");
-        wrapText(txt, 540, 600, 950, 115);
+        wrapText(txt, 540, 600, 950, 135);
 
         context.font = "25px century-gothic";
         context.fillStyle = "#FFFFFF";

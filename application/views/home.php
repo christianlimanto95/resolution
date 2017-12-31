@@ -18,7 +18,7 @@
         </div>
     </div>
     <form class="form-submit" method="post" action="<?php echo base_url("home/submit_resolution"); ?>">
-        <textarea name="resolution_text" class="type-your-resolution" placeholder="Type your resolution here (max: 100 characters)" ></textarea>
+        <textarea name="resolution_text" class="type-your-resolution" placeholder="Type your resolution here (max: 100 characters)" maxlength="50" ></textarea>
         <input type="hidden" name="resolution_text_color" value="#FFFFFF" />
         <input type="hidden" name="resolution_text_font_family" value="pier-sans" />
         <input type="hidden" name="resolution_background_color" value="#790000" />

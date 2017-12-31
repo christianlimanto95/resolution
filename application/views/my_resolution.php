@@ -9,6 +9,7 @@
         <div class="share-image" data-clipboard-text="<?php echo "Here's my 2018 resolution. Create yours too!" . "\r\n\r\n" .  $url; ?>" style="background-image: url(<?php echo base_url("assets/images/share.png"); ?>);"></div>
         <div class="line-it-button" data-lang="en" data-type="share-d" data-url="<?php echo "Here's my 2018 resolution. Create yours too!" . "\r\n\r\n" .  $url; ?>" style="display: none;" ></div>
         <a href="https://api.whatsapp.com/send?text=<?php echo rawurlencode("Here's my 2018 resolution. Create yours too!" . "\r\n\r\n" .  $url); ?>" class="share-whatsapp" style="background-image: url(<?php echo base_url("assets/images/whatsapp.png"); ?>);" ></a>
+        <a href="bbmi://api/share?message=My%20Resolution&userCustomMessage=<?php echo rawurlencode("Here's my 2018 resolution. Create yours too!" . "\r\n\r\n" .  $url); ?>" style="background-image: url(<?php echo base_url("assets/images/bbm.png"); ?>);" class="share-bbm" target="_blank" ></a>
     </div>
 </div>
 <canvas class="canvas" width="1080" height="1920" ></canvas>

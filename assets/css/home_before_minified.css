@@ -191,11 +191,12 @@
 
 .step {
 	display: inline-block;
-	width: 330px;
+    width: 330px;
+    vertical-align: top;
 }
 
 .step-title {
-	font-family: arial;
+	font-family: moon-regular;
 	font-size: 14pt;
 	letter-spacing: 2px;
 	margin-bottom: 20px;
@@ -351,7 +352,8 @@ color: white;
 	position: fixed;
 	bottom: 90px;
 	width: 100vw;
-	text-align: center;
+    text-align: center;
+    z-index: 20;
 }
 
 .modal.show {

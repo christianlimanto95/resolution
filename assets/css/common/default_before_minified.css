@@ -40,28 +40,50 @@ body {
   color: white;
 }
 
+.footer {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+
 @media all and (max-width: 1024px) {
   .div-mobile {
-    display: block;
+      display: block;
   }
 
   .section {
-    height: 160vw;
+      height: 160vw;
+  }
+
+  .footer {
+      bottom: 3vw;
+      font-size: 3vw;
   }
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
   .section {
-    height: 130vw;
+      height: 130vw;
+  }
+
+  .footer {
+      font-size: 2vw;
+      bottom: 2vw;
   }
 }
 
 @media all and (min-width: 1025px) {
   .div-mobile {
-    display: none;
+      display: none;
   }
 
   .section {
-    height: 56vw;
+      height: 56vw;
+  }
+
+  .footer {
+      bottom: 30px;
+      font-size: 9pt;
   }
 }

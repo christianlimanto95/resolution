@@ -19,9 +19,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<title><?php echo $title; ?></title>
 	<meta name="description" content="Create & share your 2018 resolution" />
-	<link rel="stylesheet" href="<?php echo base_url("assets/css/common/default.css"); ?>" />
-	<link rel="stylesheet" href="<?php echo base_url("assets/css/" . $page_name . ".css"); ?>" />	
+	<link rel="stylesheet" href="<?php echo base_url("assets/css/common/default.css?v=2"); ?>" />
+	<link rel="stylesheet" href="<?php echo base_url("assets/css/" . $page_name . ".css?v=2"); ?>" />	
 	<style>
+		@font-face {
+			font-family: moon-regular;
+			src: url(<?php echo base_url("assets/fonts/moon-regular.otf"); ?>);
+		}
+
+		@font-face {
+			font-family: moon-bold;
+			src: url(<?php echo base_url("assets/fonts/moon-bold.otf"); ?>);
+		}
+
 		@font-face {
 			font-family: century-gothic;
 			src: url(<?php echo base_url("assets/fonts/century.TTF"); ?>);

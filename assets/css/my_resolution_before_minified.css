@@ -44,10 +44,10 @@
 	-ms-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
 	transform: translateX(-50%);
-	width: 250px;
+    width: 300px;
 }
 
-.download-image, .share-image, .share-whatsapp {
+.download-image, .share-image, .share-whatsapp, .share-bbm {
     float: left;
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -56,8 +56,8 @@
 	height: 50px;
 }
 
-.share-image {
-    margin-left: 20px;
+.share-image, .share-bbm {
+    margin-left: 15px;
 }
 
 .create-my-resolution {
@@ -124,12 +124,12 @@
 .share-whatsapp {
     width: 45px;
     height: 45px;
-    margin-left: 20px;
+    margin-left: 15px;
     margin-top: 2px;
 }
 
 iframe {
-    margin-left: 20px;
+    margin-left: 15px;
     margin-top: 4px;
 }
 
